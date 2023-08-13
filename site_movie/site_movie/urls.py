@@ -22,7 +22,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('application_movie.urls'))
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('', include('application_movie.urls')),
 ]
 
 if settings.DEBUG:
